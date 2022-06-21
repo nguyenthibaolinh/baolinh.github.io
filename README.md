@@ -1,2 +1,0 @@
-# baolinh.github.io
-WebTruyenOnl
