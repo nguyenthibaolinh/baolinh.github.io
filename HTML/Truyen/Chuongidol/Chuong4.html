@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Chuong.css">
+    <link rel="icon" href="///Images/pixlr-bg-result.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+    <title>Chương 4</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="view">
+            <div class="image">
+                <a href="/HTML/index.html"><img src="/Images/Webtruyen2.png" alt=""></a>
+            </div>
+            <!-- ---------pc--------- -->
+            <div class="sub-view menu-bar">
+                <ul class="menu">
+                    <li><a href="/HTML/index.html">Trang Chủ</a></li>
+                    <li><a href="">Thể Loại</a>
+                        <ul class="submenu">
+                            <li><a href="/HTML/Muc/XuyenKhong.html">Xuyên không</a></li>
+                            <li><a href="/HTML/Muc/TrongSinh.html">Trọng sinh</a></li>
+                            <li><a href="/HTML/Muc/XuyenNhanh.html">Xuyên nhanh</a></li>
+                            <li><a href="/HTML/Muc/HienDai.html">Hiện đại</a></li>
+                            <li><a href="/HTML/Muc/CoDai.html">Cổ đại</a></li>
+                            <li><a href="/HTML/Muc/DienVan.html">Điền văn</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/HTML/Muc/DaHoan.html">Đã hoàn</a></li>
+                    <li><a href="/HTML/Muc/ChuaHoan.html">Chưa hoàn</a></li>
+                    <li><a href="/HTML/Muc/Thongbao.html">Thông báo</a></li>
+                </ul>
+            </div>
+            <div class="sub-view timkiem-bar">
+                <div class="timkiem">
+                    <form action="">
+                        <input type="text" name="s" autocomplete="off" placeholder="Tìm kiếm." id="inpS">
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+            </div>
+            <!-- ---------- -->
+        </div>
+        <div class="mobile_screen">
+            <div class="mobile_image">
+                <a href="/HTML/index.html"><img src="/Images/Webtruyen2.png" alt=""></a>
+            </div>
+            <!-- -------mobile------ -->
+            <label for="nav-mobile-input" class="nav_bars-btn">
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                    <path
+                        d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z" />
+                </svg>
+            </label>
+
+            <input type="checkbox" name="" class="nav-input" id="nav-mobile-input">
+
+            <label for="nav-mobile-input" class="nav_overlay"></label>
+            <!-- menu-mobile -->
+
+            <div class="menu-mobile">
+                <div class="timkiem-bar-mobile">
+                    <div class="timkiem-mobile">
+                        <form action="">
+                            <input type="text" name="s" autocomplete="off" placeholder="Tìm kiếm." id="inpS">
+                            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <label for="nav-mobile-input" class="menu-mobile-close"><svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 320 512">
+                        <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                        <path
+                            d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z" />
+                    </svg></label>
+                <ul class="menu-mobile-list">
+                    <li><a href="/HTML/index.html">Trang Chủ</a></li>
+                    <li><a href="/HTML/Muc/XuyenKhong.html">Xuyên không</a></li>
+                    <li><a href="/HTML/Muc/TrongSinh.html">Trọng sinh</a></li>
+                    <li><a href="/HTML/Muc/XuyenNhanh.html">Xuyên nhanh</a></li>
+                    <li><a href="/HTML/Muc/HienDai.html">Hiện đại</a></li>
+                    <li><a href="/HTML/Muc/CoDai.html">Cổ đại</a></li>
+                    <li><a href="/HTML/Muc/DienVan.html">Điền văn</a></li>
+                    <li><a href="/HTML/Muc/DaHoan.html">Đã hoàn</a></li>
+                    <li><a href="/HTML/Muc/ChuaHoan.html">Chưa hoàn</a></li>
+                    <li><a href="/HTML/Muc/Thongbao.html">Thông báo</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="grid wide">
+        <div class="row">
+            <div class="col l-12 m-12 c-12 tentruyen">
+                <a href="/HTML/Truyen/idol.html">
+                    <h1>[VONG TIỆN] IDOL TIỆN KỲ ẢO CHI LỮ</h1>
+                </a>
+                <h2>Chương 4</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col l-12 m-12 c-12">
+                <div class="button-group">
+                    <a href="./Chuong1.html"><i class="fa-solid fa-backward-fast"></i></a>
+                    <a href="./Chuong3.html"><i class="fa-solid fa-backward-step"></i></a>
+                    <a href="#" class="none">...</a>
+                    <a href="./Chuong2.html">2</a>
+                    <a href="./Chuong3.html">3</a>
+                    <a class="active" href="./Chuong4.html">4</a>
+                    <a href="./Chuong4.html"><i class="fa-solid fa-forward-step"></i></a>
+                    <a href="./Chuong4.html"><i class="fa-solid fa-forward-fast"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col l-12 m-12 c-12 ndung">
+                Từ khi ngoại tổ mẫu qua đời, số lần nàng mộng thấy như vậy rất nhiều, nhưng không có lần nào lại rõ
+                ràng như thế, giống như là nàng thật sự trùng sinh, gặp được ngoại tổ mẫu chân thật ngoài
+                đời.<br><br>
+                
+                "Sao còn chưa tỉnh, không phải nói sau một canh giờ sẽ tỉnh lại sao?" <br><br>
+
+                "Nương nương chớ có sốt ruột, Lý thái y nói thân thể quận chúa không có vấn đề, chỉ là cảm xúc quá
+                khích động, đợi nàng ngủ đủ thì tự nhiên sẽ tỉnh."<br><br>
+
+                "Ai gia sao có thể không nóng nảy, ngoại nhân đều nói Trường Hoan ỷ sủng sinh kiêu nhưng kì thực lại
+                rất hiểu chuyện, nếu không phải phát sinh đại sự thì con bé làm sao lại mất khống chế như thế ――
+                đúng rồi, ngươi thẩm vấn người bên cạnh Trường Hoan có kết quả chưa?"<br><br>
+
+                "Nha hoàn nói buổi trưa khi quận chúa vừa ngủ dậy thì tính tình liền không đúng, hỏi hôm nay hôm sau
+                thì quận chúa đầu tiên là không tin, xác nhận không thể nghi ngờ thì nói vài câu mê sảng liền cưỡi
+                ngựa xông vào hoàng cung. Cái khác bọn họ cũng không rõ lắm."<br><br>
+
+                "Chủ tử xảy ra chuyện mà bọn họ cái gì cũng không biết!" Tay Trịnh thái hậu mang hộ giáp tinh xảo
+                chợt vỗ trên mặt bàn, nghiêm nghị quát "Mỗi người ba roi, sau đó giam lại, không có ai gia phân phó
+                bất luận kẻ nào cũng không được cho cơm ăn nước uống."<br><br>
+
+                "Rõ, nô tỳ tuân mệnh."<br><br>
+
+                Tiếng nói chuyện loáng thoáng truyền vào tai Ân Trường Hoan, nàng dần ý thức lại, không cao hứng
+                nhíu mày.<br><br>
+
+                Không mở mắt, Ân Trường Hoan xoay người chui vào đệm chăn ấm áp, mềm mại, nàng muốn ngủ tiếp, tiếp
+                tục mơ giấc mộng kia.<br><br>
+
+                Trong mộng nàng uống phải bát canh bị hạ độc, sau khi chết thì trùng sinh về tháng một năm nay khi
+                ngoại tổ mẫu nàng còn chưa mất.<br><br>
+
+                Trong mộng nàng tỉnh lại ở phủ quận chúa, ý thức được chính mình sống lại liền lập tức thúc ngựa
+                xông vào hoàng cung.<br><br>
+
+                Trong cung không cho phép phóng ngựa, cho dù nàng rất được hoàng đế cùng ngoại tổ mẫu sủng ái thì
+                cũng không ngoại lệ, nhưng mà trong mộng khi trùng sinh trở về nàng giống như bị trúng tà hạ cổ,
+                không để ý đến sự ngăn cản của thị vệ, một tay lôi kéo dây cương một tay cầm roi được hoàng đế ngự
+                ban hùng hổ xông qua Ngọ môn. Chỉ tiếc nàng vừa thấy ngoại tổ mẫu còn chưa kịp nói câu nào liền bị
+                mất đi ý thức.<br><br>
+
+                Từ khi ngoại tổ mẫu qua đời, số lần nàng mộng thấy như vậy rất nhiều, nhưng không có lần nào lại rõ
+                ràng như thế, giống như là nàng thật sự trùng sinh, gặp được ngoại tổ mẫu chân thật ngoài
+                đời.<br><br>
+
+                Nàng muốn tiếp tục mơ giấc mộng kia, thậm chí vĩnh viễn dừng lại ở trong mơ.<br><br>
+
+                Nàng muốn ôm cánh tay ngoại tổ mẫu nũng nịu, muốn ngửi mùi trên người của ngoại tổ mẫu, muốn cùng
+                ngoại tổ mẫu trò chuyện, hỏi bà một chút sống ở dưới đó có tốt không.<br><br>
+
+                "Trường Hoan."<br><br>
+
+                Thân thể Ân Trường Hoan cứng đờ, mày nhíu lại thành một chữ Xuyên 川, không đúng, nàng đã tỉnh dậy
+                thì làm sao có thể nghe được thanh âm của ngoại tổ mẫu.<br><br>
+
+                Trịnh thái hậu thấy Ân Trường Hoan lại bất động, bà nhẹ nhàng vỗ vỗ bả vai Ân Trường Hoan, thanh âm
+                ôn hòa "Trường Hoan, dậy đi nào."<br><br>
+
+                Thật sự là thanh âm của ngoại tổ mẫu! Ân Trường Hoan cắn đầu lưỡi liền cảm thấy đau, nếu như là mộng
+                thì không có thể đau như vậy.<br><br>
+
+                Trong lòng Ân Trường Hoan nổi lên một suy nghĩ không thể tưởng tượng nổi ―― giấc mộng lúc trước
+                không phải là mộng, nàng thật sự trùng sinh, trùng sinh vào lúc ngoại tổ mẫu còn sống.<br><br>
+
+                Nghiêng đầu mở mắt, nhìn thấy Trịnh thái hậu mặc dù đã có nếp nhăn nhưng vẫn y nguyên hồng nhuận,
+                còn có sự ung dung, độ lượng.<br><br>
+
+                Ân Trường Hoan kinh ngạc nhìn Trịnh thái hậu, bờ môi mấp máy mấy lần nhưng không có thanh âm phát
+                ra, giọt nước mắt to như hạt đậu trượt ra ngoài hốc mắt.<br><br>
+
+                "Tại sao lại khóc?" Trịnh thái hậu từ ái lau đi nước mắt Ân Trường Hoan, dùng ngữ khí dỗ tiểu hài tử
+                nói với nàng "Chuyện gì xảy ra, nói cho ngoại tổ mẫu, ngoại tổ mẫu làm chủ cho cháu."<br><br>
+
+                Ân Trường Hoan rưng rưng lắc đầu, nàng rất muốn lập tức đem tất cả mọi chuyện nói cho ngoại tổ mẫu,
+                nhưng chuyện nàng sau khi chết trùng sinh quá thần kỳ, nàng không biết nên nói thế nào, hơn nữa hiện
+                tại nhiều người phức tạp, cũng không thích hợp nói loại chuyện khó tin này.<br><br>
+
+                Ân Trường Hoan không nói Trịnh thái hậu không truy hỏi, đối với Trịnh thái hậu mà nói, chỉ cần thân
+                thể Ân Trường Hoan không sao thì những cái khác đều không quan trọng.<br><br>
+
+                Bà để thái y tiến lên bắt mạch cho Ân Trường Hoan, thái y thấy Ân Trường Hoan tỉnh liền thở phào,
+                Trịnh thái hậu đã nói, nếu xảy ra chuyện gì thì mười cái đầu của hắn đều không đủ rơi.<br><br>
+
+                Sau khi kiểm tra cẩn thận, thái y nói thân thể Ân Trường Hoan không có bất cứ vấn đề gì.<br><br>
+
+                Trịnh thái hậu khẽ gật đầu, để thái y lui ra.<br><br>
+
+                "Khoan đã." Ân Trường Hoan bỗng nhiên lên tiếng, nàng ngồi xuống đầu giường.<br><br>
+
+                Tính tình Ân Trường Hoan vốn hoạt bát, nhưng nàng dù sao cũng là được Trịnh thái hậu một tay dạy bảo
+                lớn lên, mà Trịnh thái hậu không có nhi tử thân sinh nhưng lại nuôi lớn thánh thượng hiện nay mà
+                đương kim thánh thượng thật tâm thật ý tôn kính bà hơn cả mẹ đẻ, bởi vậy có thể thấy được bản lĩnh
+                của Trịnh thái hậu. Ân Trường Hoan không có lợi hại như Trịnh thái hậu nhưng ít ra cũng có ba phần,
+                mặc dù kinh hỉ đến sắp mất khống chế nhưng nàng vẫn nhanh chóng bình tĩnh lại.<br><br>
+
+                Lý thái y cung kính "Quận chúa có gì phân phó?"<br><br>
+
+                Ân Trường Hoan nghiêm mặt nói "Lý thái y, tình trạng thân thể ngoại tổ mẫu là ngươi phụ trách đúng
+                không?"<br><br>
+
+                Lý thái y hồi "Vâng."<br><br>
+
+                Ân Trường Hoan thấp giọng "Ngoại tổ mẫu gần đây có khả năng phát sinh bệnh tim không?"<br><br>
+
+                Trước khi trùng sinh Trịnh thái hậu cũng là bởi vì đột phát bệnh tim mà qua đời, không có bất kỳ dấu
+                hiệu nào, lúc có người phát hiện thì đã là sáng ngày hôm sau, người đã sớm đi.<br><br>
+
+                "Bệnh tim?" Dung mạo Lý thái y đại biến, ngẩng đầu kinh ngạc nhìn Ân Trường Hoan, thanh âm không tự
+                chủ đề cao "Làm sao có thể, thân thể thái hậu khỏe mạnh, không có bất kỳ dị thường nào, không có khả
+                năng xuất hiện bệnh tim."<br><br>
+
+                "Đến bất ngờ thì sao?" Ân Trường Hoan không yên lòng, nói "Không bằng Lý thái y hiện tại bắt mạch
+                cho ngoại tổ mẫu để xác nhận một chút."<br><br>
+
+                Đây là một chuyện rất đơn giản, Lý thái y không có lý do từ chối, Trịnh thái hậu mặc dù cảm thây kỳ
+                quái nhưng Ân Trường Hoan là đang quan tâm bà, bà đương nhiên sẽ không cự tuyệt.<br><br>
+
+                Nín hơi bắt mạch, lại hỏi kỹ mọi chuyện thường ngày của Trịnh thái hậu, ngữ khí Lý thái y chắc chắn
+                nói "Thân thể thái hậu khỏe mạnh, không có khả năng phát sinh bệnh tim."<br><br>
+
+                Lý thái y là một trong hai thái y giỏi nhất của thái y viện, lẽ ra hắn chẩn bệnh không có sai, có
+                thể kiếp trước ngoại tổ mẫu đích thật là bị đau tim mà chết, sau khi ngoại tổ mẫu qua đời, mấy vị
+                thái y xem xét đều nói là bị bệnh tim, vị Lý thái y này cũng bởi vì thất trách mà bị giáng chức,
+                cuối cùng là đã có chuyện gì xảy ra.<br><br>
+
+                Ân Trường Hoan không nghĩ ra, nhưng bây giờ cũng chỉ có thể để Lý thái y rời đi, sau đó Trịnh thái
+                hậu cho cung nữ lui xuống, để tâm phúc canh giữ ở ngoài điện, bà hỏi Ân Trường Hoan "Đến tột cùng là
+                đã xảy ra chuyện gì?"<br><br>
+
+                Ân Trường Hoan là được Trịnh thái hậu một tay nuôi nấng, bà hiểu rất rõ Ân Trường Hoan, sẽ không vô
+                duyên vô cớ xông hoàng cung ôm bà khóc, càng sẽ không vô duyên vô cớ hỏi bà có thể bị đau tim hay
+                không.<br><br>
+
+                Đem hành vi của Ân Trường Hoan nối liền lại, không khó đoán ra Ân Trường Hoan là cho rằng bà sẽ xảy
+                ra chuyện nên mới kích động như vậy. Thế nhưng là vì cái gì Trường Hoan cảm thấy bà sẽ xảy ra
+                chuyện, điểm ấy dù là túc trí đa mưu tính toán không bỏ sót thì Trịnh thái hậu cũng nghĩ không
+                thông.<br><br>
+
+                Nhớ lại nàng đã từng mất đi ngoại tổ mẫu, hốc mắt Ân Trường Hoan lại đỏ lên, nàng ôm lấy Trịnh thái
+                hậu, dựa sát vào trong ngực bà thấp giọng nói chuyện nàng khởi tử hoàn sinh.<br><br>
+
+                Ân Trường Hoan là nữ nhi của Gia Di trưởng công chúa cùng Ân quốc công hiện nay.<br><br>
+
+                Gia Di trưởng công chúa khi sinh ra đã ốm yếu, sinh hạ Ân Trường Hoan không bao lâu liền buông tay
+                nhân gian. Trịnh thái hậu chỉ có một đứa con gái là Gia Di trưởng công chúa, độc nữ qua đời, bà một
+                là vì an ủi tang nữ thống khổ, hai là lo lắng người Ân gia không thể chiếu cố tốt Ân Trường Hoan,
+                thế là liền đem Ân Trường Hoan mang vào Từ Ninh cung nuôi dưỡng.<br><br>
+
+                Từ nhỏ lớn lên ở trong hoàng cung Ân Trường Hoan cùng người Ân gia không thân cận lắm, bởi vì nhiều
+                nguyên nhân mà người Ân gia đối với Ân Trường Hoan cũng chỉ là tình cảm trên danh nghĩa, trong lòng
+                Ân Trường Hoan, thân nhân của nàng chỉ có một mình Trịnh thái hậu, cho nên nàng mới có thể nói thật,
+                không có nửa phần giấu diếm.<br><br>
+
+                Mà Ân Trường Hoan tự mình hiểu lấy, nàng không có bản lĩnh lợi hại giống Trịnh thái hậu, nếu chính
+                nàng đi tìm chân tướng, bảo hộ sinh mệnh hai tổ tôn thì không bằng đem chuyện này nói cho Trịnh thái
+                hậu.<br><br>
+
+                Trịnh thái hậu lắc đầu bật cười, vỗ nhè nhẹ lưng Ân Trường Hoan nói "Trường Hoan của chúng ta có
+                phải gặp ác mộng không?"<br><br>
+
+                Trịnh thái hậu không nghi ngờ Ân Trường Hoan sẽ nói dối, nhưng chuyện này quá mức kỳ lạ, bà đang suy
+                nghĩ có lẽ là Ân Trường Hoan gặp ác mộng, nhất thời không phân biệt được hiện thực cùng mộng
+                cảnh.<br><br>
+
+                Ân Trường Hoan nghe vậy vội la lên "Ngoại tổ mẫu người tin tưởng cháu đi, cháu chưa hề nói dối, đây
+                đều là thật."<br><br>
+
+                "Đúng rồi " nàng đột nhiên nghĩ đến một chuyện có thể chứng minh nàng chưa hề nói dối "Ngoại tổ mẫu,
+                trong tay người có phải hay không có một người tên Trương Thanh?"<br><br>
+
+                Thần sắc Trịnh thái hậu khẽ biến, trong tay bà đúng là có một người tên Trương Thanh, người này cực
+                kì quan trọng, là tâm phúc của bà, rất ít người biết, bà cũng chưa từng nhắc tới hắn trước mặt Ân
+                Trường Hoan.<br><br>
+
+                "Sau khi người qua đời hắn đã tìm cháu, còn đem toàn bộ thủ hạ trong tay người giao cho
+                cháu."<br><br>
+
+                Tiếp đó Ân Trường Hoan lại nói mấy cái tên, đều là lung lạc năng nhân dị sĩ của Trịnh thái hậu, có
+                mấy người thậm chí còn là trọng thần trong triều.<br><br>
+
+                Những chuyện này là tuyệt mật, Ân Trường Hoan không có khả năng trong mộng sẽ biết được, Trịnh thái
+                hậu không còn nghi hoặc gì, mặc dù chuyện này rất khó có thể tưởng tượng nổi.<br><br>
+
+                "Ai đã hạ độc cháu?" Bà qua đời chưa đến một năm, lại có người dám hạ độc Trường Hoan, sắc mặt Trịnh
+                thái hậu liền âm trầm như nước.<br><br>
+
+                Ân Trường Hoan lắc đầu "Cháu không biết."<br><br>
+
+                Phủ quận chúa được mấy ma ma quản lý rất chặt, có thể đến gần nàng thì đều là tâm phúc, Ân Trường
+                Hoan cũng nghĩ không thông nàng sao lại bị hạ độc.<br><br>
+
+                "Cháu trúng độc bây giờ không vội, còn có nhiều thời gian như vậy, hiện tại quan trọng chính là thân
+                thể ngoại tổ mẫu." Ân Trường Hoan lau nước mắt. Nàng trước khi trùng sinh nếu biết ngoại tổ mẫu sẽ
+                đột phát bệnh tim thì sẽ kịp thời dự phòng "Ngoại tổ mẫu, chúng ta đi tìm Điền thái y xem có được
+                không?"<br><br>
+
+                Trong cung thái y có hai người y thuật tốt nhất, một người là Lý thái y, chủ yếu phụ trách thân thể
+                Trịnh thái hậu. Một người khác là Điền thái y, phụ trách sức khỏe của hoàng đế.<br><br>
+
+                "Không vội." Trịnh thái hậu híp mắt "Thân thể của mình ai gia nắm chắc, khả năng đột phát bệnh tim
+                không lớn." Bà nhẹ nhõm cười cười "Lại nói, ai gia còn chờ để xem Trường Hoan thành thân, ai gia
+                không có việc gì."<br><br>
+
+                "Thế nhưng mà."<br><br>
+
+                Trịnh thái hậu mỉm cười vuốt tóc Ân Trường Hoan, ôn nhu nhưng lại ý vị thâm trường nói "Trường Hoan,
+                cháu không nên quên, chuyện trên đời này không phải chỉ có ngoài ý muốn."<br><br>
+
+                Mắt Ân Trường Hoan đột nhiên co lại "Ngoại tổ mẫu cho là có người làm?"<br><br>
+
+                "Thế nhưng mà sau khi người qua đời thì các thái y đều nói người là bị đau tim mà đi." Lúc trước
+                nàng cũng có sự hoài nghi này, nhưng mà trong hoàng cung có nhiều thái y như vậy, không có khả năng
+                không ai phát hiện có bất thường "Cháu cùng Trương Thanh bí mật điều tra qua, không có dị thường
+                gì."<br><br>
+
+                "Thiên ngoại hữu thiên nhân ngoại hữu nhân, thái y trong hoàng cung cũng không nhất định là có y
+                thuật tốt nhất, bọn họ cũng không thể nhìn ra tất cả mọi thứ" Ngữ khí Trịnh thái hậu bình tĩnh
+                "Huống hồ khi đó ai gia đã đi, nhiều một chuyện không bằng bớt một chuyện, cho dù phát hiện không
+                đúng bọn họ cũng sẽ không nói."<br><br>
+
+                Thấy trên mặt Ân Trường Hoan vẫn còn lo lắng, Trịnh thái hậu chậm rãi cười nói "Trường Hoan yên tâm,
+                cháu trùng sinh là lão thiên gia cho tổ tôn chúng ta hi vọng sống, ngoại tổ mẫu nhất định sẽ cẩn
+                thận."<br><br>
+
+                Nghe được câu nói này, Ân Trường Hoan cong môi cười một tiếng "Có câu nói này của ngoại tổ mẫu thì
+                Trường Hoan an tâm rồi."<br><br>
+
+                Trịnh thái hậu cẩn thận hỏi chuyện Ân Trường Hoan trùng sinh cùng việc nàng có chỗ nào không thoải
+                mái không, chuyện trùng sinh quá thần kỳ cũng quá khó tưởng tượng, Trịnh thái hậu lo lắng sẽ có di
+                chứng.<br><br>
+
+                Có thể chính Ân Trường Hoan cũng không rõ vì sao nàng lại trùng sinh, nàng chỉ là uống bát canh
+                bị hạ độc, tỉnh lại liền trùng sinh, đã không nhìn thấy đầu trâu mặt ngựa cũng không nhìn thấy Bồ
+                Tát cứu khổ cứu nạn.<br><br>
+
+                "Có lẽ lão thiên gia rất thích cháu, không đành lòng để cho cháu cứ như vậy hương tiêu ngọc vẫn, cho
+                nên mới để cháu trùng sinh." Kinh hỉ của chuyện trùng sinh dần biến mất, Ân Trường Hoan vẫn là quận
+                chúa ngoan ngoãn, dáng yêu trong mắt Trịnh thái hậu.<br><br>
+                Trịnh thái hậu búng một cái vào trán Ân Trường Hoan, bật cười nói "Cháu nha, làm sao còn giống bộ
+                dạng của tiểu hài tử chưa lớn."<br><br>
+
+                Ân Trường Hoan lại dựa sát vào người Trịnh thái hậu, nũng nịu nói "Trước mặt ngoại tổ mẫu cháu mãi
+                mãi là hài tử."<br><br>
+
+                Ân Trường Hoan hơn nửa năm không gặp Trịnh thái hậu, tưởng niệm mà nói đều nói không hết. Tổ tôn hai
+                người nói gần nửa canh giờ thì giọng chưởng sự cô cô của Từ Ninh cung ở ngoài điện vang lên "Thái
+                hậu, hoàng thượng cùng Đoan vương gia tới."<br><br>
+
+                Nghe được Đoan vương tới, Ân Trường Hoan bĩu môi khinh thường, người này trong ngoài đều không phải
+                quân tử, nàng thực sự mù quáng khi lúc trước chọn hắn làm vị hôn phu.<br><br>
+
+                Trịnh thái hậu thấy biểu cảm của Ân Trường Hoan liền giật mình, bà qua đời thì Ân Trường Hoan nhất
+                định sẽ sống không tốt.<br><br>
+
+                Hai tổ tôn bọn họ mà chết thì cũng thôi đi nhưng lần này Trường Hoan lại trùng sinh, những kẻ dám
+                khi dễ bảo bối ngoại tôn nữ của bà một người bà cũng sẽ không buông tha.<br><br>
+
+                Trịnh thái hậu nghĩ như vậy, liền nghe được Ân Trường Hoan cáo trạng:<br><br>
+
+                "Ngoại tổ mẫu, Đoan vương là kẻ xấu, trước khi cháu bị độc chết mấy ngày thì bắt gặp hắn cùng Ân
+                Bạch Tuyết lén lút gặp mặt, bộ dáng vô sỉ khiến người khác buồn nôn."<br><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col l-12 m-12 c-12">
+                <div class="button-group">
+                    <a href="./Chuong1.html"><i class="fa-solid fa-backward-fast"></i></a>
+                    <a href="./Chuong3.html"><i class="fa-solid fa-backward-step"></i></a>
+                    <a href="#" class="none">...</a>
+                    <a href="./Chuong2.html">2</a>
+                    <a href="./Chuong3.html">3</a>
+                    <a class="active" href="./Chuong4.html">4</a>
+                    <a href="./Chuong4.html"><i class="fa-solid fa-forward-step"></i></a>
+                    <a href="./Chuong4.html"><i class="fa-solid fa-forward-fast"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='lentop'>
+        <div>
+            <img
+                src='https://1.bp.blogspot.com/-k6sikOdzFXQ/VwqCKDosmEI/AAAAAAAAKxE/nLxLhkTIO6o3iE5ZWmtxo2bf4QHdzPQNQ/s1600/top.png' />
+        </div>
+    </div>
+    <div class="footer grid">
+        <div class="row no-gutters">
+            <div class="col l-10 m-10 c-12 l-o-1 m-o-1">
+                <div class="footer-item">
+                    <h4>WebTruyen - Kho Đọc Truyện Chữ Hay Nhất.</h4>
+                    <p> &emsp; Tất cả các nội dung trên website đều là sưu tầm trên internet hoặc do các thành viên đóng
+                        góp.
+                        Nếu có bất kỳ khiếu nại nào liên quan đến vấn đề quản quyền tác giả hãy liên lạc cho chúng tôi,
+                        chúng tôi sẽ gỡ nó xuống sớm nhất có thể. Cảm ơn. <br>
+                        <b> &emsp; Liên hệ:</b> <br>
+                        &emsp;&emsp; Email: linhntb.21it@vku.udn.vn <br>
+                        &emsp;&emsp; SĐT: 0854249519
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/Script/Script.js"></script>
+</body>
+
+</html>
